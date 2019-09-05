@@ -10,3 +10,6 @@ RUN apk add --no-cache --virtual .ruby-builddeps build-base ruby-dev && \
 
 ENV LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8
+
+ENTRYPOINT ["fastlane"]
+CMD ["--help"]
